@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MidasGate Financial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=EB+Garamond&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,300&family=EB+Garamond&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+<section id="header">
+                
+        <img src="mgflogo.png" width="130px" height="auto">
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="#hero">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#footer-content">Contact Us</a></li>
+            <li><a href="index.html#what-we-do-sect">Services</a></li>
+        </ul>
+
+    </div>
+</section>
+
+<body >
+    <div id="herobody">
+          
+            <section id="hero">
+                <section id="heros">
+                    <h1>Your Wealth, Our Expertise: Together, We Prosper.</h1>
+                </section>
+            
+                <section id="heross">
+                    <p>
+                        At MidasGate Financial, we offer personalized financial advice and expert market insights 
+                        to help you secure a brighter future for your loved ones. Our carefully selected 
+                        team of specialists is committed to your financial well-being.
+                    </p>
+                </section>
+            </section>
+
+
+            <!-- Additional Sections (Services, Blog, etc.) -->
+
+            <!--
+                At Midascrest Financial, we offer a range of financial services to our clients, including:
+        Investment Management: We provide investment management services to help our clients grow their wealth and achieve their financial goals.
+        Risk Management: We help our clients manage their financial risks by providing risk management solutions tailored to their needs.
+        Financial Planning: We offer financial planning services to help our clients plan for their future and achieve their long-term financial goals.
+        Wealth Management: We provide wealth management services to help our clients preserve and grow their wealth over time.
+
+            -->
+
+    </div>
+
+
+    <div id="what-we-do-sect"></div>
+
+    <section id="what-we-do-section">
+            <section id="what-we-do">
+                <div id="what-we-do-header"><h2>What We Do</h2></div>
+                <div id="what-we-do-body">
+                    <p>
+                        At Midascrest Financial, we are dedicated to providing a comprehensive range of financial services to our clients. Our offerings include:
+                    </p>
+                    
+                    <h3>Investment Management</h3>
+                    <p class="what-we-do-paragraph">
+                        We specialize in investment management services, assisting our clients in growing their wealth and achieving their financial goals through strategic and tailored investment strategies.
+                    </p>
+                
+                    <h3>Risk Management</h3>
+                    <p class="what-we-do-paragraph" id="what-we-do-middle-paragraph">
+                        Our team is committed to helping clients manage financial risks effectively. We offer personalized risk management solutions designed to meet the unique needs of each individual or business.
+                    </p>
+                
+                    <h3>Financial Planning</h3>
+                    <p class="what-we-do-paragraph"> 
+                        Looking to plan for your financial future? Our financial planning services are geared towards helping clients envision and achieve their long-term financial goals through thoughtful and personalized planning.
+                    </p>
+                
+                    <h3>Wealth Management</h3>
+                    <p class="what-we-do-paragraph">
+                        Preserving and growing wealth over time is a priority for us. Our wealth management services are crafted to assist clients in navigating the complexities of wealth preservation and enhancement.
+                    </p>
+                </div>
+            </section>
+    
+    </section>
+
+    
+    <div id="WhoWeAre">
+        <div id="whoweare">
+           
+            <div id="valueswhoweare">
+                <h2 id="valuesheader">OUR FOUNDATION AND VALUES</h2>
+            </div>
+
+            <div id="specifics">
+                <ul id="values">
+                    <li>COURAGE</li>
+                    <li>INTEGRITY</li>
+                    <li>PERSISTENCE</li>
+                    <li>ADAPTABILITY</li>
+                </ul>
+            </div>
+                
+            <div id="Foundationpara">
+                <p >
+                    These values serve as the bedrock of our foundation, guiding our decisions and 
+                    actions as we navigate the complexities of the financial world.
+                
+                </p>
+            </div>
+        </div>
+        <div class="back_ground-image" id="back_ground-image"></div>
+        <!--<script src="script.js"></script>--> 
+     <script>
+         const section = document.getElementById('back_ground-image');
+         // Array of image URLs
+         const images = [
+            'rob.jpg', 'Cham.jpg',
+         'kelvin.jpg'
+             // Add more image URLs as needed
+         ];
+         let currentIndex = 0;
+         // Function to set a random background image
+         function setNextBackground() {
+             const randomIndex = Math.floor(Math.random() * images.length);
+             const imageUrl = images[currentIndex];
+             section.style.backgroundImage = `url(${imageUrl})`;
+              // Move to the next image in the array
+             currentIndex = (currentIndex + 1) % images.length;
+             
+         }
+ 
+         // Initial background set
+         setNextBackground();
+ 
+         // Change background every 5 seconds (5000 milliseconds)
+         setInterval(setNextBackground, 5000);
+         
+     </script>
+   
+    </div>
+
+    <div id="why">
+        <div id="WhySection">
+            <h2 id="whySectionheader">Why Choose MidasGate Financial?</h2>
+            <div id="WhyMidasGateFinancial">
+                <div class="Benefits" id="Excellence">
+                    <img src="star3.png", alt="Icon",style="width: 10px; height: auto;">   
+                
+                    <h3>Commitment to Excellence</h3>
+                    <p class="Benefitsparagraph">
+                        At MidasGate Financial, we are dedicated to providing exceptional financial services. Our commitment to excellence sets us apart, ensuring that your financial goals are met with precision and care.
+                    </p>
+                </div>
+            
+            
+                <div class="Benefits" id="Aligned">
+                    <img src="review2.png", alt="Icon",style="width: 10px; height: auto;">   
+                
+                    <h3>Aligned Interests</h3>
+                    <p class="Benefitsparagraph">
+                        Your success is our success. At MidasGate Financial, we align our interests with yours, ensuring that our strategies are designed to maximize your financial well-being.
+                    </p>
+                </div>
+            
+                <div class="Benefits" id="Long-Term">
+                    
+                    <img src="long-term3.png", alt="Icon",style="width: 5px; height: auto;">   
+                
+                    <h3>Long-Term Perspective</h3>
+                    <p class="Benefitsparagraph">
+                        We take a long-term view on investments and financial planning. Our focus is on building a foundation for sustained success, helping you achieve your financial objectives over the long haul.
+                    </p>
+                </div>
+            
+                <div class="Benefits" id="Costs">
+                    <img src="reduce-cost2.png", alt="Icon",style="width: 5px; height: auto;">   
+                
+                    <h3>Low Costs</h3>
+                    
+                    <p class="Benefitsparagraph">
+                        We understand the importance of cost-effectiveness. MidasGate Financial is committed to providing high-quality financial services at competitive and transparent costs, ensuring value for your investment.
+                    </p>
+                </div>
+            
+                <!-- Add more sections as needed -->
+
+            </div>
+
+            
+        
+        </div>
+    </div>
+</body>    
+    
+
+<footer>
+    <div id="footer">
+        <div class="footer-content" id="footer-content">
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footerlist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#what-we-do-sect">Our Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul class="footerlist">
+
+                    <li> 
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span>+254 700584808<br>
+                        </span>
+                    </li>
+                    
+                    <li> 
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span>midasgatefinancial@gmail.com<br>
+                        </span>
+                    </li>
+                    
+                </ul>
+            </div>
+        
+
+            <div class="footer-section" id="directions">
+                <h4>Visit Us</h4>
+                <ul class="footerlist">
+                    <li> 
+                        <span><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
+                        <span>MidasGate Financial<br>
+                            
+                        </span>
+                    </li>
+                    <li>
+                        <span class="location">New Blue and White Hostels</span><br>
+                        <span class="location">Just after branching from USIU RD</span><br>
+                        <span class="location">RoySambu Constituency, Nairobi, Kenya</span>
+                    </li>
+                </ul>    
+                
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="copyright">
+    <p>&copy; 2023 MidasGate Financial. All rights reserved.</p>
+</div>
+    
+</html>
